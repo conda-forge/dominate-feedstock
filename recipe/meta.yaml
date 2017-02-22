@@ -1,8 +1,8 @@
 {%set name = "dominate" %}
-{%set version = "2.2.1" %}
-{%set compress_type = "zip" %}
+{%set version = "2.3.1" %}
+{%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "4aa6a2f458461541f9ceeb58b49da9b42320f80aa2a6f692baea2817431d9953" %}
+{%set hash_val = "4b8ce6f33633c9dd9175b228d21c00c801b6bd0327747cd5e17fc2da934c3a69" %}
 {%set build_num = "0" %}
 
 package:
