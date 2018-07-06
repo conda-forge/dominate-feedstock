@@ -14,14 +14,15 @@ Summary: Dominate is a Python library for creating and manipulating HTML documen
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/dominate-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/dominate-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/dominate-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/dominate-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/dominate-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/dominate-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/dominate-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/dominate-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dominate/badges/version.svg)](https://anaconda.org/conda-forge/dominate)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dominate/badges/downloads.svg)](https://anaconda.org/conda-forge/dominate)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-dominate-green.svg)](https://anaconda.org/conda-forge/dominate) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/dominate.svg)](https://anaconda.org/conda-forge/dominate) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/dominate.svg)](https://anaconda.org/conda-forge/dominate) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/dominate.svg)](https://anaconda.org/conda-forge/dominate) |
 
 Installing dominate
 ===================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
