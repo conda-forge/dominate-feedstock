@@ -1,8 +1,8 @@
 {% set name = "dominate" %}
-{% set version = "2.3.1" %}
+{% set version = "2.3.4" %}
 {% set compress_type = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "4b8ce6f33633c9dd9175b228d21c00c801b6bd0327747cd5e17fc2da934c3a69" %}
+{% set hash_val = "8dfcca2bde3937a2d03db6e55efcb0c0dea0d4ab0923dc983d794b19e9247328" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
