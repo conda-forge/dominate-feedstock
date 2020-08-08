@@ -1,8 +1,7 @@
 {% set name = "dominate" %}
-{% set version = "2.4.0" %}
+{% set version = "2.5.1" %}
 {% set compress_type = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "a92474b4312bd8b4c1789792f3ec8c571cd8afa8e7502a2b1c64dd48cd67e59c" %}
+{% set hash_val = "9b05481605ea8c0afd0a98c0156a9fb78d9c406368d66b3e6fedf36920fb9d78" %}
 
 package:
   name: {{ name|lower }}
@@ -10,12 +9,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  sha256: {{ hash_val }}
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -34,7 +33,7 @@ about:
   license: LGPL 3.0
   license_file: LICENSE.txt
   license_family: LGPL
-  summary: 'Dominate is a Python library for creating and manipulating HTML documents using an elegant DOM API.'
+  summary: Dominate is a Python library for creating and manipulating HTML documents using an elegant DOM API.
   dev_url: http://github.com/Knio/dominate/
 
 extra:
