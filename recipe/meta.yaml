@@ -1,37 +1,38 @@
 {% set name = "dominate" %}
-{% set version = "2.4.0" %}
-{% set compress_type = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "a92474b4312bd8b4c1789792f3ec8c571cd8afa8e7502a2b1c64dd48cd67e59c" %}
+{% set version = "2.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 76ec2cde23700a6fc4fee098168b9dee43b99c2f1dd0ca6a711f683e8eb7e1e4
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
 
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
     - dominate
+  commands:
+    - pip check
+  requires: 
+    - pip
 
 about:
   home: http://github.com/Knio/dominate/
-  license: LGPL 3.0
+  license: LGPL-3.0-or-later
   license_file: LICENSE.txt
   license_family: LGPL
   summary: 'Dominate is a Python library for creating and manipulating HTML documents using an elegant DOM API.'
@@ -40,3 +41,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - jan-janssen
