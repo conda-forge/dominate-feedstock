@@ -3,7 +3,7 @@ About dominate
 
 Home: http://github.com/Knio/dominate/
 
-Package license: LGPL 3.0
+Package license: LGPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dominate-feedstock/blob/master/LICENSE.txt)
 
