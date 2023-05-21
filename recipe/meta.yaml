@@ -1,5 +1,5 @@
 {% set name = "dominate" %}
-{% set version = "2.7.0" %}
+{% set version = "2.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 520101360892ebf9d0553f67d37e359ff92403d8a1e33814030503088a05da49
+  sha256: 4c90c3befaf88e612b71f4b39af7bcbef8977acfa855cec957225a8fbf504007
 
 build:
   number: 0
