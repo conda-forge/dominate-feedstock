@@ -1,11 +1,11 @@
-About dominate
-==============
+About dominate-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dominate-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/Knio/dominate/
 
 Package license: LGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dominate-feedstock/blob/main/LICENSE.txt)
 
 Summary: Dominate is a Python library for creating and manipulating HTML documents using an elegant DOM API.
 
