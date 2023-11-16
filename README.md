@@ -9,7 +9,7 @@ Package license: LGPL-3.0-or-later
 
 Summary: Dominate is a Python library for creating and manipulating HTML documents using an elegant DOM API.
 
-Development: http://github.com/Knio/dominate/
+Development: https://github.com/Knio/dominate
 
 Current build status
 ====================
