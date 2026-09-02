@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: dominate
-  version: "2.9.1"
+  version: 2.9.1
 
 package:
   name: ${{ name|lower }}
@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - setuptools >=62
     - pip
   run:
